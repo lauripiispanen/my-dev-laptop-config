@@ -1,0 +1,26 @@
+- name: Create SSH keypairs
+  openssh_keypair:
+    path: '{{ ansible_env.HOME }}/.ssh/id_{{ item }}_rsa'
+  loop: '{{ ssh_keys }}'
+
+- name: Create .ssh/config if not exists
+  file:
+    path: '{{ ansible_env.HOME }}/.ssh/config'
+    mode: '0600'
+    state: touch
+
+- name: Init .ssh/config
+  blockinfile:
+    path: '{{ ansible_env.HOME }}/.ssh/config'
+    block: |
+      Host *
+        AddKeysToAgent yes
+        UseKeychain yes
+
+- name: Add keys to keychain
+  lineinfile:
+    path: '{{ ansible_env.HOME }}/.ssh/config'
+    line: '  IdentityFile ~/.ssh/id_{{ item }}_rsa'
+    insertafter: '^ Host *'
+    firstmatch: yes
+  loop: '{{ ssh_keys }}'

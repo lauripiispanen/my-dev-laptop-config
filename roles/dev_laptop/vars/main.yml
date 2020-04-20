@@ -1,0 +1,26 @@
+homebrew_packages:
+- terraform
+- gradle
+- r
+- go
+- direnv
+- kubectl
+
+homebrew_cask_packages:
+- visual-studio-code
+- docker
+- google-cloud-sdk
+- iTerm2
+- firefox
+- slack
+- dropbox
+- 1password
+- intellij-idea
+- caffeine
+- rstudio
+- aerial
+
+pyenv_python_versions: []
+
+ssh_keys:
+- github

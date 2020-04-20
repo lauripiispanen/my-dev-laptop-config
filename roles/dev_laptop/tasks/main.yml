@@ -1,0 +1,14 @@
+- name: Create SSH keys
+  import_tasks: ssh_keys.yml
+
+- name: Basic settings
+  import_tasks: basic_settings.yml
+
+- name: OS X Defaults
+  import_tasks: osx_defaults.yml
+
+- name: Install things
+  import_tasks: installs.yml
+
+- name: Configure shell
+  import_tasks: shell.yml

@@ -1,0 +1,5 @@
+- osx_defaults:
+    domain: com.apple.dock
+    key: orientation
+    type: string
+    value: right
