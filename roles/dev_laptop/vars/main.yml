@@ -5,6 +5,9 @@ homebrew_packages:
 - go
 - direnv
 - kubectl
+- helm
+- pyenv
+- nvm
 
 homebrew_cask_packages:
 - visual-studio-code
@@ -19,8 +22,10 @@ homebrew_cask_packages:
 - caffeine
 - rstudio
 - aerial
+- spotify
 
 pyenv_python_versions: []
 
 ssh_keys:
 - github
+- gcloud
