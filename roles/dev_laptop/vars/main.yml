@@ -8,6 +8,11 @@ homebrew_packages:
 - helm
 - pyenv
 - nvm
+- watch
+- kustomize
+- kube-ps1
+- rbenv
+- postgresql
 
 homebrew_cask_packages:
 - visual-studio-code
@@ -23,9 +28,15 @@ homebrew_cask_packages:
 - rstudio
 - aerial
 - spotify
+- wkhtmltopdf
+- google-chrome
 
 pyenv_python_versions: []
 
 ssh_keys:
 - github
 - gcloud
+
+gem_packages:
+- iStats
+- taskjuggler

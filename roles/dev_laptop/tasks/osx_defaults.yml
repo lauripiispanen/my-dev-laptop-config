@@ -15,3 +15,33 @@
     key: DisableURLLoading
     type: bool
     value: true
+
+- osx_defaults:
+    key: NSAutomaticSpellingCorrectionEnabled
+    type: bool
+    value: false
+
+- osx_defaults:
+    key: WebAutomaticSpellingCorrectionEnabled
+    type: bool
+    value: false
+
+- osx_defaults:
+    key: NSAutomaticCapitalizationEnabled
+    type: bool
+    value: false
+
+- osx_defaults:
+    key: NSAutomaticPeriodSubstitutionEnabled
+    type: bool
+    value: false
+
+- osx_defaults:
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+
+- osx_defaults:
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false

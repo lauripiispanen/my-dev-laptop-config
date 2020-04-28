@@ -18,3 +18,16 @@
   lineinfile:
     path: "{{ ansible_env.HOME }}/.zshrc"
     line: eval "$(direnv hook zsh)"
+
+- name: Add kube-ps1 to .zshrc
+  blockinfile:
+    path: "{{ ansible_env.HOME }}/.zshrc"
+    block: |
+      source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+      PROMPT='$(kube_ps1)'$PROMPT
+      kubeoff
+
+- name: Add rbenv to .zshrc
+  lineinfile:
+    path: "{{ ansible_env.HOME }}/.zshrc"
+    line: eval "$(rbenv init -)"
