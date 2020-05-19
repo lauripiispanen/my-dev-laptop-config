@@ -45,3 +45,6 @@
     key: NSAutomaticQuoteSubstitutionEnabled
     type: bool
     value: false
+
+- name: "Remove man page keyboard shortcuts"
+  shell: defaults write pbs NSServicesStatus -dict "com.apple.Terminal - Open man Page in Terminal - openManPage" '{"key_equivalent" = "";}' "com.apple.Terminal - Search man Page Index in Terminal - searchManPages" '{"key_equivalent" = "";}'
