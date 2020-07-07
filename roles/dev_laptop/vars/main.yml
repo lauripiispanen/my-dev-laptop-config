@@ -19,6 +19,13 @@ homebrew_packages:
 - lua
 - luarocks
 - jq
+- certbot
+- coreutils
+- jabba
+- dive
+- shellcheck
+- rust
+- fswatch
 
 homebrew_cask_packages:
 - visual-studio-code
@@ -36,6 +43,7 @@ homebrew_cask_packages:
 - spotify
 - wkhtmltopdf
 - google-chrome
+- powershell
 
 pyenv_python_versions: []
 
