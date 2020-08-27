@@ -13,6 +13,14 @@
   tags:
   - brew
 
+- name: Tap external homebrew repos
+  homebrew_tap:
+    name: '{{ item }}'
+    state: present
+  loop: '{{ homebrew_taps }}'
+  tags:
+  - brew
+
 - name: Install homebrew packages
   homebrew:
     name: '{{ item }}'

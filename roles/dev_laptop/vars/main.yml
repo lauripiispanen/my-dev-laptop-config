@@ -1,3 +1,6 @@
+homebrew_taps:
+- heroku/brew
+
 homebrew_packages:
 - terraform
 - gradle
@@ -26,6 +29,8 @@ homebrew_packages:
 - shellcheck
 - rust
 - fswatch
+- pre-commit
+- heroku
 
 homebrew_cask_packages:
 - visual-studio-code
