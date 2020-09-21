@@ -49,6 +49,7 @@ homebrew_cask_packages:
 - wkhtmltopdf
 - google-chrome
 - powershell
+- dotnet-sdk
 
 pyenv_python_versions: []
 
